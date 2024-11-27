@@ -56,10 +56,21 @@ body {
   border-radius: 50%;
 }
 
+.hands-box .hand i {
+  display: inline-block;
+}
+
 .hands-box .hours {
   width: 320px;
   height: 320px;
   border: 2px solid red;
+}
+
+.hands-box .hours i {
+  width: 8px;
+  /* half of parent height */
+  height: 160px;
+  background: red;
 }
 
 .hands-box .minutes {
