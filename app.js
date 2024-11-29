@@ -1,6 +1,8 @@
 const numberHours = document.querySelector(".number-hours");
+const barSeconds = document.querySelector(".bar-seconds");
 
 const numberElement = [];
+const barElement = [];
 
 //create numbers hours
 for (let i = 1; i <= 12; i++) {
@@ -8,3 +10,10 @@ for (let i = 1; i <= 12; i++) {
 }
 
 numberHours.insertAdjacentHTML("afterbegin", numberElement.join(""));
+
+//create bar seconds
+for (let i = 1; i <= 60; i++) {
+  barElement.push(`<span style="--index:${i};"><p></p></span>`);
+}
+
+barSeconds.insertAdjacentHTML("afterbegin", barElement.join(""));
