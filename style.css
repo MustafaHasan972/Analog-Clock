@@ -82,6 +82,19 @@ body {
   height: 450px;
 }
 
+/* center dot bottom */
+.hands-box .minutes::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: #0ef;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0ef;
+}
+
 .hands-box .minutes i {
   width: 8px;
   /* half of parent height */
