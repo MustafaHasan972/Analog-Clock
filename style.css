@@ -60,12 +60,13 @@ body {
 
 .hands-box .hand i {
   display: inline-block;
+  transform-origin: bottom;
+  border-radius: 50%;
 }
 
 .hands-box .hours {
   width: 320px;
   height: 320px;
-  border: 2px solid red;
 }
 
 .hands-box .hours i {
@@ -73,13 +74,12 @@ body {
   /* half of parent height */
   height: 160px;
   background: red;
-  transform: rotate(30deg);
+  transform: rotate(40deg);
 }
 
 .hands-box .minutes {
   width: 450px;
   height: 450px;
-  border: 2px solid yellow;
 }
 
 .hands-box .minutes i {
@@ -87,12 +87,12 @@ body {
   /* half of parent height */
   height: 225px;
   background: yellow;
+  transform: rotate(230deg);
 }
 
 .hands-box .seconds {
   width: 480px;
   height: 480px;
-  border: 2px solid white;
 }
 
 .hands-box .seconds i {
@@ -100,4 +100,5 @@ body {
   /* half of parent height */
   height: 240px;
   background: white;
+  transform: rotate(180deg);
 }
