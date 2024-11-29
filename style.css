@@ -59,7 +59,7 @@ body {
 }
 
 .hands-box .hand i {
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .hands-box .hours {
