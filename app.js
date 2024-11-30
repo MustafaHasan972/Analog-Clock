@@ -17,3 +17,16 @@ for (let i = 1; i <= 60; i++) {
 }
 
 barSeconds.insertAdjacentHTML("afterbegin", barElement.join(""));
+
+const handHours = document.querySelector(".hand.hours");
+const handMinutes = document.querySelector(".hand.minutes");
+const handSeconds = document.querySelector(".hand.seconds");
+
+function getCurrentTime() {
+  let date = new Date();
+  let currentHours = date.getHours();
+  let currentMinutes = date.getMinutes();
+  let currentSeconds = date.getSeconds();
+
+  handSeconds.computedStyleMap.transform = `rotate(${currentSeconds * 6}deg)`;
+}
