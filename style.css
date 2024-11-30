@@ -21,6 +21,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: colorful 15s linear infinite;
+}
+
+@keyframes colorful {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .bar-seconds,
@@ -44,6 +51,7 @@ body {
   width: 2px;
   height: 12px;
   background: #0ef;
+  box-shadow: 0 0 10px #0ef;
 }
 
 /* 5n = every multiple of 5 */
@@ -66,7 +74,7 @@ body {
 .number-hours span p {
   font-size: 52px;
   color: #0ef;
-  text-shadow: 0 0 10px #0ef;
+  text-shadow: 0 0 5px #0ef;
   transform: rotate(calc(var(--index) * -30deg));
 }
 
@@ -88,7 +96,7 @@ body {
   display: inline-block;
   transform-origin: bottom;
   border-radius: 50%;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 5px #0ef;
 }
 
 .hands-box .hours {
